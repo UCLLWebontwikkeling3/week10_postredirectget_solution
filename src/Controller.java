@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +17,9 @@ public class Controller extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		boolean loggedIn = true;
+		// als boolean false dan foute manier
+		// als boolean true dan juiste manier (PRG)
+    	boolean loggedIn = true;
 		if (loggedIn) {
 			response.sendRedirect("ok.jsp");
 		}
